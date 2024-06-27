@@ -50,13 +50,15 @@ main {
     .header-right {
         display: flex;
         align-items: center;
-        column-gap: 60px;
+        -moz-column-gap: 60px;
+             column-gap: 60px;
     }
 
 /* start navigation */
     .navigation ul {
         display: flex;
-        column-gap: 30px;
+        -moz-column-gap: 30px;
+             column-gap: 30px;
         width: 110%;
         align-items: center;
         transition-property: all;
@@ -68,7 +70,7 @@ main {
         background-color: white;
         transition-property: all;
         transition-duration: 0.5s;
-        border-radius: 16px;
+        border-radius: 25px;
         box-shadow: 10px 10px 10px rgb(170, 170, 170);
         border-width: 0.1px;
         border-style: double;
@@ -82,7 +84,7 @@ main {
         padding: 15px 20px;
         transition-property: all;
         transition-duration: 0.4s;
-        border-radius: 16px;
+        border-radius: 25px;
     }
     .navigation li:hover,
     .navigation a:hover{
@@ -103,7 +105,7 @@ main {
         width: 150px;
         height: 50px;
         padding: 5px;
-        border-radius: 10px;
+        border-radius: 25px;
     }
     .language a {
         width: 50%;
@@ -115,7 +117,7 @@ main {
         justify-content: center;
         align-items: center;
         background-color: white;
-        border-radius: 5px;
+        border-radius: 25px;
     }
     .active-language p {
         color: black;
@@ -129,7 +131,7 @@ main {
         display: flex;
         justify-content: center;
         align-items: center;
-        border-radius: 5px;
+        border-radius: 25px;
     }
     .option-language p {
         color: white;
