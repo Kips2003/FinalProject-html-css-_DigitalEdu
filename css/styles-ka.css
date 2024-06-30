@@ -75,7 +75,7 @@ html body {
     }
     .navigation a {
         color: #191A19;
-        font-family: 'Be Vietnam Pro';
+        font-family: 'BPG ExtraSquare Mtavruli';
         letter-spacing: 2px;
         font-size: 16px;
         padding: 15px 20px;
@@ -124,7 +124,7 @@ html body {
     }
     .active-language p {
         color: #191A19;
-        font-family: 'Rubik';
+        font-family: 'BPG ExtraSquare Mtavruli';
         font-weight: 600;
         letter-spacing: 1px;
     }
@@ -181,7 +181,7 @@ html body {
         row-gap: 20px;
     }
     .sec-one-title h2{
-        font-family: 'Be Vietnam Pro';
+        font-family: 'BPG ExtraSquare Mtavruli';
         font-size: 80px;
         font-weight: 700;
         text-align: start;
@@ -189,7 +189,7 @@ html body {
         -webkit-text-stroke-color: white;
     }
     .sec-one-title h3{
-        font-family: 'Be Vietnam Pro';
+        font-family: 'BPG ExtraSquare Mtavruli';
         font-size: 80px;
         font-weight: 700;
         text-align: start;
@@ -214,7 +214,7 @@ html body {
         border-color: white;
         cursor: pointer;
         font-size: 20px;
-        font-family: 'Be Vietnam Pro';
+        font-family: 'BPG ExtraSquare Mtavruli';
         font-weight: 600;
         color: white;
         transition: all;
@@ -237,12 +237,12 @@ html body {
         background-color: white;
         color: #191A19;
         font-size: 20px;
-        font-family: 'Be Vietnam Pro';
+        font-family: 'BPG ExtraSquare Mtavruli';
         border-width: 1px;
         border-color: #191A19;
         cursor: pointer;
         font-size: 20px;
-        font-family: 'Be Vietnam Pro';
+        font-family: 'BPG ExtraSquare Mtavruli';
         font-weight: 600;
         color: #191A19;
         transition-property: all;
@@ -275,7 +275,7 @@ html body {
         column-gap: 30px;
     }
     .sec-two-wraper h2{
-        font-family: 'Inter';
+        font-family: 'BPG ExtraSquare Mtavruli';
         font-size: 60px;
         font-weight: 800;
         color: #FFF;
@@ -284,7 +284,7 @@ html body {
         text-underline-offset: 40px;
     }
     .sec-two-wraper p{
-        font-family: 'Inter';
+        font-family: 'BPG ExtraSquare Mtavruli';
         font-size: 20px;
         font-weight: 400;
         color: #FFF;
@@ -328,7 +328,7 @@ html body {
         flex-direction: column;
     }
     .contact-info h2{
-        font-family: 'Inter';
+        font-family: 'BPG ExtraSquare Mtavruli';
         font-size: 60px;
         font-weight: 800;
         color: #191A19;
@@ -349,14 +349,14 @@ html body {
         font-size: 35px;
     }
     .info span{
-        font-family: 'Inter';
+        font-family: 'BPG ExtraSquare Mtavruli';
         font-size: 20px;
         font-weight: 400;
         color: #191A19;
 
     }
     .info a{
-        font-family: 'Inter';
+        font-family: 'BPG ExtraSquare Mtavruli';
         font-size: 20px;
         font-weight: 400;
         color: #191A19; 
@@ -373,10 +373,6 @@ html body {
     .map{
         width: 40%;
         height: 30vw;
-    }
-    .map iframe{
-        width: 100%;
-        height: 100%;
     }
 
 
@@ -399,7 +395,7 @@ html body {
 
     /* section four title */
     .sec-four-title h2{
-        font-family: 'Inter';
+        font-family: 'BPG ExtraSquare Mtavruli';
         font-size: 60px;
         font-weight: 800;
         color: #191A19;
@@ -456,7 +452,7 @@ html body {
         height: 45vw;
     }
     .shop h3{
-        font-family: 'Be Vietnam Pro';
+        font-family: 'BPG ExtraSquare Mtavruli';
         font-size: 40px;
         font-weight: 600;
         color: #191A19;
@@ -465,7 +461,7 @@ html body {
         text-align: center;
     }
     .shop p{
-        font-family: 'Be Vietnam Pro';
+        font-family: 'BPG ExtraSquare Mtavruli';
         font-size: 20px;
         font-weight: 400;
         color: #191A19;
@@ -554,14 +550,14 @@ html body {
         row-gap: 20px;
     }
     .navigation-wraper h2{
-        font-family: 'Rubik';
+        font-family: 'BPG ExtraSquare Mtavruli';
         font-size: 25px;
         font-weight: 600;
         color: #FFF;
         text-align: center;
     }
     .navigation-wraper a{
-        font-family: 'Rubik';
+        font-family: 'BPG ExtraSquare Mtavruli';
         font-size: 20px;
         font-weight: 400;
         color: #FFF;
@@ -586,6 +582,6 @@ html body {
     .copyright p{
         font-size: 20px;
         color: #FFF;
-        font-family: 'Inter';
+        font-family: 'BPG ExtraSquare Mtavruli';
         font-weight: 300;
     }

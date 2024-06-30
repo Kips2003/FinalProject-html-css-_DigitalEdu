@@ -29,23 +29,28 @@
                 <nav class="navigation">
                     <ul>
                         <li>
-                            <a class="active-navigation" href="index.html">
+                            <a href="index.html">
                                 HOME
                             </a>
                         </li>
                         <li>
-                            <a href="about.html">
+                            <a href="#sec-two" onclick="scrollToSection(event, 'sec-two')">
                                 ABOUT
                             </a>
                         </li>
                         <li>
-                            <a href="contact.html">
+                            <a href="#sec-three" onclick="scrollToSection(event, 'sec-three')">
                                 CONTACT
                             </a>
                         </li>
                         <li>
+                            <a href="#sec-four" onclick="scrollToSection(event, 'sec-four')">
+                                SHOP NOW
+                            </a>
+                        </li>
+                        <li>
                             <a href="furniture-AI.html">
-                                AI Support
+                                AI SUPPORT
                             </a>
                         </li>
                     </ul>
@@ -56,7 +61,7 @@
                             <p>EN</p>
                         </div>
                     </a>
-                    <a href="index-ka">
+                    <a href="index-ka.html">
                         <div class="option-language">
                             <p>ქა</p>
                         </div>
@@ -65,11 +70,207 @@
             </div>
         </div>
     </header>
+    
     <main>
-        
+        <section class="sec-one" id="sec-one">
+            <div class="sec-one-photo">
+                <div class="sec-one-wraper">
+                    <div class="sec-one-title">
+                        <h2>Furniture</h2>
+                        <h3>House</h3>
+                    </div>
+                    <div class="sec-one-buttons">
+                        <button class="button1">
+                            Sign Up
+                            </button>
+                        <button class="button2">
+                            Log In                            
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sec-two" id="sec-two">
+            <div class="sec-two-wraper">
+                <div class="sec-two-title">
+                    <h2>ABOUT US</h2>
+                    <p>Funiture house "G&D" has been in furniture business for more then 30 years. This is test website (template) which will be active in few years(current content is not done yet, but it will be done soon). This website will have online shopping and also AI TOOL which can generate photo image of the furniture you want with size and measurements you will provide.</p>
+                </div>
+                <div class="sec-two-photo"></div>
+            </div>
+        </section>
+        <section class="sec-four" id="sec-four">
+            <div class="sec-four-wraper">
+                <div class="sec-four-title">
+                    <h2>SHOPING</h2>
+                </div>
+                <div class="shopping-wraper">
+                    <div class="shopping">
+                        <div class="first-row">
+                            <a href="" class="click-shop" data-target = "shop1">
+                                <div class="shop" id="shop1">
+                                    <div class="photo1"></div>
+                                    <h3>Living Room</h3>
+                                    <p>click to view models</p>
+                                </div>
+                            </a>
+                            <a href="" class="click-shop" data-target = "shop2">
+                                <div class="shop" id="shop2">
+                                    <div class="photo2"></div>
+                                    <h3>Kitchen</h3>
+                                    <p>click to view models</p>
+                                </div>
+                            </a>
+                            </div>
+                        <div class="second-row">
+                            <a href="" class="click-shop" data-target = "shop3">
+                                <div class="shop" id="shop3">
+                                    <div class="photo3"></div>
+                                    <h3>Decoration</h3>
+                                    <p>click to view models</p>
+                                </div>
+                            </a>
+                            <a href="" class="click-shop" data-target = "shop4">
+                                <div class="shop" id="shop4">
+                                    <div class="photo4"></div>
+                                    <h3>Bedroom</h3>
+                                    <p>click to view models</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sec-three" id="sec-three">
+            <div class="sec-three-wraper">
+                <div class="contact-info">
+                    <h2>CONTACT INFO</h2>
+                    <div class="info">
+                        <div class="phone">
+                            <i class="fa-solid fa-phone"></i>
+                            <span class="span-contact">Tel:</span>
+                            <a href="tel:+995599271155" target="_blank">+995 599 271 155</a>
+                        </div>
+                        <div class="email">
+                            <i class="fa-regular fa-envelope"></i>
+                            <span class="span-contact">Email:</span>
+                            <a href="mailto:example.@gmail.com?subject=The%20subject%20of%20the%20mail" target="_blank">example.@gmail.com</a>
+                        </div>
+                        <div class="location">
+                            <i class="fa-solid fa-location-pin"></i>
+                            <span class="span-contact">Address:</span>
+                            <a href="https://maps.app.goo.gl/u3uU6ABpEjvDJVLk7" target="_blank">Sachkhere, Gomarteli Street #17</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d368.6835655683133!2d43.40379459995517!3d42.332533346507766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x405b5f9b286943dd%3A0x1b61e03b1d56fbe9!2sFurniture%20Store!5e0!3m2!1sen!2sge!4v1719707312939!5m2!1sen!2sge" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer>
-
+    <footer class="footer">
+        <div class="footer-wraper">
+            <div class="left-side">
+                <div class="logo">
+                    <a href="index.html">
+                        <div class="logo-div">
+                            <span class="icon-logo"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span><span class="path13"></span><span class="path14"></span><span class="path15"></span><span class="path16"></span><span class="path17"></span><span class="path18"></span></span>    
+                        </div>
+                    </a>
+                </div>
+                <div class="social-media">
+                    <a href="">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-facebook-messenger"></i>
+                    </a>
+                    <a href=""><i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="navigation-wraper">
+                <h2>GO TO</h2>
+                <nav class="footer-navigation">
+                    <ul>
+                        <li>
+                            <a href="index.html">
+                                HOME
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#sec-two" onclick="scrollToSection(event, 'sec-two')">
+                                ABOUT
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#sec-three" onclick="scrollToSection(event, 'sec-three')">
+                                CONTACT
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#sec-four" onclick="scrollToSection(event, 'sec-four')">
+                                SHOP NOW
+                            </a>
+                        </li>
+                        <li>
+                            <a href="furniture-AI.html">
+                                AI SUPPORT
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="copyright">
+                <i class="fa-regular fa-copyright"></i>
+                <p>Copyright. All rights reserved</p>
+            </div>
+        </div>
     </footer>
+    <script>
+        const header = document.querySelector('header');
+        const section1 = document.getElementById('sec-one');
+    
+        window.addEventListener('scroll', () => {
+            const section1Bottom = section1.getBoundingClientRect().bottom-190;
+        
+            if (section1Bottom < 0) {
+                header.style.background = '#191A19';
+            } else {
+                header.style.background = 'linear-gradient(to bottom, black, transparent)';
+            }
+        });
+        function scrollToSection(event, sectionId) {
+            event.preventDefault();
+            const section = document.getElementById(sectionId);
+            const offset = -180;
+            const bodyRect = document.body.getBoundingClientRect().top;
+            const sectionRect = section.getBoundingClientRect().top;
+            const sectionPosition = sectionRect - bodyRect;
+            const offsetPosition = sectionPosition + offset;
+
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+            });
+        }
+        const shopLinks = document.querySelectorAll('.click-shop');
+        shopLinks.forEach(link => {
+            link.addEventListener('click', function(event) {
+                event.preventDefault();
+                const targetId = this.dataset.target;
+                document.getElementById(targetId).style.padding = '30px';
+                setTimeout(() =>{
+                    document.getElementById(targetId).style.padding = '20px';
+                },150);
+                
+            });
+        });
+      </script>
 </body>
 </html>
