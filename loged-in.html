@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="ka">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/styles-ka.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/logo.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <title>Document</title>
@@ -30,39 +30,39 @@
                     <ul>
                         <li>
                             <a href="index.html">
-                                მთავარი
+                                HOME
                             </a>
                         </li>
                         <li>
                             <a href="#sec-two" onclick="scrollToSection(event, 'sec-two')">
-                                ჩვენს შესახებ
+                                ABOUT
                             </a>
                         </li>
                         <li>
                             <a href="#sec-three" onclick="scrollToSection(event, 'sec-three')">
-                                კონტაქტი
+                                CONTACT
                             </a>
                         </li>
                         <li>
                             <a href="#sec-four" onclick="scrollToSection(event, 'sec-four')">
-                                მაღაზია
+                                SHOP NOW
                             </a>
                         </li>
                         <li>
                             <a href="furniture-AI.html">
-                                ხელოვნური ინტელექტი
+                                AI SUPPORT
                             </a>
                         </li>
                     </ul>
                 </nav>
                 <div class="language">
-                    <a href="index.html">
-                        <div class="option-language">
+                    <a href="loged-in.html">
+                        <div class="active-language">
                             <p>EN</p>
                         </div>
                     </a>
-                    <a href="index-ka.html">
-                        <div class="active-language">
+                    <a href="loged-in-ka.html">
+                        <div class="option-language">
                             <p>ქა</p>
                         </div>
                     </a>
@@ -71,22 +71,13 @@
         </div>
     </header>
     
-    <main>
+    <main id="mainPage">
         <section class="sec-one" id="sec-one">
             <div class="sec-one-photo">
                 <div class="sec-one-wraper">
                     <div class="sec-one-title">
-                        <h2>ავეჯის</h2>
-                        <h3>სახლი</h3>
-                    </div>
-                    <div class="sec-one-buttons">
-                            <button class="button1"  id="registerButton">
-                                რეგისტრაცია
-                            </button>
-                        </a>
-                            <button class="button2" id="loginButton">
-                                შესვლა                     
-                            </button>
+                        <h2>Furniture</h2>
+                        <h3>House</h3>
                     </div>
                 </div>
             </div>
@@ -94,8 +85,8 @@
         <section class="sec-two" id="sec-two">
             <div class="sec-two-wraper">
                 <div class="sec-two-title">
-                    <h2>ჩვენს შესახებ</h2>
-                    <p>ავეჯის სახლი "G&D" ავეჯის ბიზნესში 30 წელზე მეტია. ეს არის სატესტო ვებგვერდი (თარგი), რომელიც რამდენიმე წელიწადში გააქტიურდება (ამჟამინდელი კონტენტი ჯერ არ დასრულებულა, მაგრამ მალე გაკეთდება). ამ ვებსაიტს ექნება ონლაინ შოპინგი და ასევე AI TOOL, რომელსაც შეუძლია შექმნას თქვენთვის სასურველი ავეჯის ფოტო გამოსახულება ზომითა და ზომებით, რომელსაც თქვენ მიაწვდით.</p>
+                    <h2>ABOUT US</h2>
+                    <p>Funiture house "G&D" has been in furniture business for more then 30 years. This is test website (template) which will be active in few years(current content is not done yet, but it will be done soon). This website will have online shopping and also AI TOOL which can generate photo image of the furniture you want with size and measurements you will provide.</p>
                 </div>
                 <div class="sec-two-photo"></div>
             </div>
@@ -103,7 +94,7 @@
         <section class="sec-four" id="sec-four">
             <div class="sec-four-wraper">
                 <div class="sec-four-title">
-                    <h2>მაღაზია</h2>
+                    <h2>SHOPING</h2>
                 </div>
                 <div class="shopping-wraper">
                     <div class="shopping">
@@ -111,15 +102,15 @@
                             <a href="" class="click-shop" data-target = "shop1">
                                 <div class="shop" id="shop1">
                                     <div class="photo1"></div>
-                                    <h3>მისაღები</h3>
-                                    <p>დააჭირეთ რომ იხილოთ</p>
+                                    <h3>Living Room</h3>
+                                    <p>click to view models</p>
                                 </div>
                             </a>
                             <a href="" class="click-shop" data-target = "shop2">
                                 <div class="shop" id="shop2">
                                     <div class="photo2"></div>
-                                    <h3>სამზარეულო</h3>
-                                    <p>დააჭირეთ რომ იხილოთ</p>
+                                    <h3>Kitchen</h3>
+                                    <p>click to view models</p>
                                 </div>
                             </a>
                             </div>
@@ -127,15 +118,15 @@
                             <a href="" class="click-shop" data-target = "shop3">
                                 <div class="shop" id="shop3">
                                     <div class="photo3"></div>
-                                    <h3>დეკორაციები</h3>
-                                    <p>დააჭირეთ რომ იხილოთ</p>
+                                    <h3>Decoration</h3>
+                                    <p>click to view models</p>
                                 </div>
                             </a>
                             <a href="" class="click-shop" data-target = "shop4">
                                 <div class="shop" id="shop4">
                                     <div class="photo4"></div>
-                                    <h3>საძინებელი</h3>
-                                    <p>დააჭირეთ რომ იხილოთ</p>
+                                    <h3>Bedroom</h3>
+                                    <p>click to view models</p>
                                 </div>
                             </a>
                         </div>
@@ -146,27 +137,27 @@
         <section class="sec-three" id="sec-three">
             <div class="sec-three-wraper">
                 <div class="contact-info">
-                    <h2>საკონტაქტო ინფორმაცია</h2>
+                    <h2>CONTACT INFO</h2>
                     <div class="info">
                         <div class="phone">
                             <i class="fa-solid fa-phone"></i>
-                            <span class="span-contact">ტელეფონი:</span>
-                            <a href="tel:+995 599 271 155" target="_blank">+995 599 271 155</a>
+                            <span class="span-contact">Tel:</span>
+                            <a href="tel:+995599271155" target="_blank">+995 599 271 155</a>
                         </div>
                         <div class="email">
                             <i class="fa-regular fa-envelope"></i>
-                            <span class="span-contact">მეილი:</span>
+                            <span class="span-contact">Email:</span>
                             <a href="mailto:example.@gmail.com?subject=The%20subject%20of%20the%20mail" target="_blank">example.@gmail.com</a>
                         </div>
                         <div class="location">
                             <i class="fa-solid fa-location-pin"></i>
-                            <span class="span-contact">მისამართი:</span>
-                            <a href="https://maps.app.goo.gl/u3uU6ABpEjvDJVLk7" target="_blank">საჩხერე, გომართლის #17</a>
+                            <span class="span-contact">Address:</span>
+                            <a href="https://maps.app.goo.gl/u3uU6ABpEjvDJVLk7" target="_blank">Sachkhere, Gomarteli Street #17</a>
                         </div>
                     </div>
                 </div>
                 <div class="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d368.6835655683133!2d43.40379459995517!3d42.332533346507766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x405b5f9b286943dd%3A0x1b61e03b1d56fbe9!2sFurniture%20Store!5e0!3m2!1sen!2sge!4v1719707312939!5m2!1sen!2sge" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d368.6835655683133!2d43.40379459995517!3d42.332533346507766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x405b5f9b286943dd%3A0x1b61e03b1d56fbe9!2sFurniture%20Store!5e0!3m2!1sen!2sge!4v1719707312939!5m2!1sen!2sge" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </section>
@@ -196,32 +187,32 @@
                 </div>
             </div>
             <div class="navigation-wraper">
-                <h2>გადასვლა</h2>
+                <h2>GO TO</h2>
                 <nav class="footer-navigation">
                     <ul>
                         <li>
                             <a href="index.html">
-                                მთავარი
+                                HOME
                             </a>
                         </li>
                         <li>
                             <a href="#sec-two" onclick="scrollToSection(event, 'sec-two')">
-                                ჩვენს შესახებ
+                                ABOUT
                             </a>
                         </li>
                         <li>
                             <a href="#sec-three" onclick="scrollToSection(event, 'sec-three')">
-                                კონტაქტი
+                                CONTACT
                             </a>
                         </li>
                         <li>
                             <a href="#sec-four" onclick="scrollToSection(event, 'sec-four')">
-                                მაღაზია
+                                SHOP NOW
                             </a>
                         </li>
                         <li>
                             <a href="furniture-AI.html">
-                                ხელოვნური ინტელექტი
+                                AI SUPPORT
                             </a>
                         </li>
                     </ul>
@@ -234,33 +225,6 @@
         </div>
     </footer>
     <div id="loginModal" class="modal">
-        <span class="close">&times;</span>
-        <div class="modal-content">
-            <form onsubmit="submitLoginForm(event)">
-                <label for="email">მეილი:</label><br>
-                <input type="email" id="email" name="email" placeholder="მეილი"><br>
-                <label for="password">პაროლი:</label>
-                <input type="password" id="password" name="password" placeholder="პაროლი"><br>
-                <button type="submit" value="Login">შესვლა</button>
-            </form>
-        </div>
-    </div>
-    <div id="registerModal" class="register-modal">
-        <span class="close-register">&times;</span>
-        <div class="modal-content">
-            <form action="http://localhost:5029/register" method="post">
-                <label for="name">სახელი და გვარი:</label>
-                <input type="text" id="name" name="name" placeholder="სახელი და გვარი"><br>
-                <label for="phone">ტელეფონის ნომერი:</label>
-                <input type="text" name="phone" id="phone" placeholder="ტელეფონის ნომერი"><br>
-                <label for="email">მეილი:</label>
-                <input type="email" id="email" name="email" placeholder="მეილი"><br>
-                <label for="password">პაროლი:</label>
-                <input type="password" id="password" name="password" placeholder="პაროლი"><br>
-                <button type="submit">რეგისტრაცია</button>
-            </form>
-        </div>
-    </div>
     <script src="script.js"></script>
 </body>
 </html>

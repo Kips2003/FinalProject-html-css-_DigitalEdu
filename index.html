@@ -235,19 +235,19 @@
     <div id="loginModal" class="modal">
         <span class="close">&times;</span>
         <div class="modal-content">
-            <form>
+            <form onsubmit="submitLoginForm(event)">
                 <label for="email">Email:</label><br>
                 <input type="email" id="email" name="email" placeholder="Email"><br>
                 <label for="password">Password:</label>
                 <input type="password" id="password" name="password" placeholder="Password"><br>
-                <button type="submit">Log In</button>
+                <button type="submit" value="Login">Log In</button>
             </form>
         </div>
     </div>
     <div id="registerModal" class="register-modal">
         <span class="close-register">&times;</span>
         <div class="modal-content">
-            <form action="http://localhost:5029/submit" method="post">
+            <form action="http://localhost:5029/register" method="post">
                 <label for="name">Full Name:</label>
                 <input type="text" id="name" name="name" placeholder="Full Name"><br>
                 <label for="phone">Phone number:</label>
@@ -261,98 +261,6 @@
         </div>
     </div>
 
-    <script>
-        const header = document.querySelector('header');
-        const section1 = document.getElementById('sec-one');
-    
-        window.addEventListener('scroll', () => {
-            const section1Bottom = section1.getBoundingClientRect().bottom-190;
-        
-            if (section1Bottom < 0) {
-                header.style.background = '#191A19';
-            } else {
-                header.style.background = 'linear-gradient(to bottom, black, transparent)';
-            }
-        });
-        function scrollToSection(event, sectionId) {
-            event.preventDefault();
-            const section = document.getElementById(sectionId);
-            const offset = -180;
-            const bodyRect = document.body.getBoundingClientRect().top;
-            const sectionRect = section.getBoundingClientRect().top;
-            const sectionPosition = sectionRect - bodyRect;
-            const offsetPosition = sectionPosition + offset;
-
-            window.scrollTo({
-                top: offsetPosition,
-                behavior: 'smooth'
-            });
-        }
-        const shopLinks = document.querySelectorAll('.click-shop');
-        shopLinks.forEach(link => {
-            link.addEventListener('click', function(event) {
-                event.preventDefault();
-                const targetId = this.dataset.target;
-                document.getElementById(targetId).style.padding = '30px';
-                setTimeout(() =>{
-                    document.getElementById(targetId).style.padding = '20px';
-                },150);
-                
-            });
-        });
-
-
-
-        // login page
-        document.addEventListener('DOMContentLoaded', () => {
-            const loginButton = document.getElementById('loginButton');
-            const modal = document.getElementById('loginModal');
-            const closeButton = document.querySelector('.close');
-            const mainPage = document.getElementById('mainPage');
-
-            loginButton.onclick = () => {
-                modal.style.display = 'block';
-                mainPage.classList.add('blur');
-            };
-
-            closeButton.onclick = () => {
-                modal.style.display = 'none';
-                mainPage.classList.remove('blur');
-            };
-
-            window.onclick = (event) => {
-                if (event.target === modal) {
-                    modal.style.display = 'none';
-                    mainPage.classList.remove('blur');
-                }
-            };
-        });
-
-
-        // register page
-        document.addEventListener('DOMContentLoaded', () => {
-            const registerButton = document.getElementById('registerButton');
-            const modal = document.getElementById('registerModal');
-            const closeButton = document.querySelector('.close-register');
-            const mainPage = document.getElementById('mainPage');
-
-            registerButton.onclick = () => {
-                modal.style.display = 'block';
-                mainPage.classList.add('blur');
-            };
-
-            closeButton.onclick = () => {
-                modal.style.display = 'none';
-                mainPage.classList.remove('blur');
-            };
-
-            window.onclick = (event) => {
-                if (event.target === modal) {
-                    modal.style.display = 'none';
-                    mainPage.classList.remove('blur');
-                }
-            };
-        });
-      </script>
+    <script src="script.js"></script>
 </body>
 </html>
