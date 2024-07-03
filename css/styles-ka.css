@@ -374,6 +374,10 @@ html body {
         width: 40%;
         height: 30vw;
     }
+    .map iframe{
+        width: 100%;
+        height: 100%;
+    }
 
 
 /* section four */

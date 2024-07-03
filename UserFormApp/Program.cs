@@ -47,8 +47,8 @@ app.MapPost("/register", async context =>
     var form = context.Request.Form;
     var fullname = form["fullname"];
     var phone = form["phone"];
-    var email = form["email"];
-    var password = form["password"];
+    var email = form["email-register"];
+    var password = form["password-register"];
 
     users.Add(new User { FullName = fullname, Phone = phone, Email = email, Password = password });
 
@@ -62,8 +62,8 @@ app.MapPost("/register", async context =>
 app.MapPost("/login", async context =>
 {
     var form = context.Request.Form;
-    var email = form["email"];
-    var password = form["password"];
+    var email = form["email-login"];
+    var password = form["password-login"];
 
     var user = users.FirstOrDefault(u => u.Email == email && u.Password == password);
 

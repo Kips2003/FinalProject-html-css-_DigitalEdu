@@ -591,7 +591,9 @@ html body {
     }
 
 
-
+/* login page */
+/* this page is for loging in to the site */
+/* it is going through back end but it is not working gfrom now */
     .modal {
         display: none;
         position: fixed;
@@ -669,7 +671,13 @@ html body {
 
 
 
-
+/* regitster page */
+/* this parto of the code is for registering to the website */
+/* this information gose through back end and it shoudl write to text file */
+/* but in this case if you want to try it you shoudl download the file */
+/* then using terminal go to  "UserFormApp" folder  with "cd User FormApp" commandd */
+/* then you can run the back end with "dotnet run" command in terminal */
+/* then register page will work good and every time you register it will be added to the text file with json format */
     .register-modal {
         display: none;
         position: fixed;
