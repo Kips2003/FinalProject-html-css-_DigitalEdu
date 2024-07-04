@@ -2,7 +2,7 @@ const header = document.querySelector('header');
         const section1 = document.getElementById('sec-one');
     
         window.addEventListener('scroll', () => {
-            const section1Bottom = section1.getBoundingClientRect().bottom-190;
+            const section1Bottom = section1.getBoundingClientRect().bottom-200;
         
             if (section1Bottom < 0) {
                 header.style.background = '#191A19';
@@ -106,3 +106,22 @@ const header = document.querySelector('header');
                 alert('Login failed');
             }
         }
+
+
+        // burgerbar function
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const burgerBar = document.getElementById('navBars');
+            const navigation = document.querySelector('.header-right .navigation');
+            const navLinks = document.querySelectorAll('.header-right .navigation ul li a');
+
+        
+            burgerBar.addEventListener('click', function () {
+                navigation.classList.toggle('active');
+            });
+            navLinks.forEach(link => {
+                link.addEventListener('click', function () {
+                    navigation.classList.remove('active');
+                });
+            });
+        });

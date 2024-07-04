@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 html body {
     width: 100%;
 }
@@ -9,9 +16,15 @@ html body {
 
 
 .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     position: fixed;
     width: 100%;
     padding: 20px 0;
@@ -21,9 +34,15 @@ html body {
 .wraper {
     max-width: 1440px;
     width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding: 20px 0;
 }
 
@@ -34,43 +53,77 @@ html body {
     }
     .logo-div{
         z-index: 1000;
-        box-shadow: 0px 0px 20px rgb(44, 44, 44) ;
+        -webkit-box-shadow: 0px 0px 20px rgb(44, 44, 44) ;
+                box-shadow: 0px 0px 20px rgb(44, 44, 44) ;
     }
     
 
 /* need to appear after  480px*/
     .burgerbar {
         display: none;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        font-size: 25px;
+        border-radius: 10px;
+        background-color: #FFF;
+        width: 100px;
+        height: 50px;
     }
 
 /* navigation and en-ka in header-right */
     .header-right {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         -moz-column-gap: 60px;
-             column-gap: 60px;
+             -webkit-column-gap: 60px;
+                column-gap: 60px;
     }
 
 /* start navigation */
     .navigation ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        -moz-column-gap: 30px;
-             column-gap: 30px;
+        -webkit-column-gap: 2vw;
+           -moz-column-gap: 2vw;
+                column-gap: 2vw;
         width: 110%;
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-transition-property: all;
+        -o-transition-property: all;
         transition-property: all;
-        transition-duration: 0.5s;
+        -webkit-transition-duration: 0.5s;
+             -o-transition-duration: 0.5s;
+                transition-duration: 0.5s;
+        margin-left: 2vw;
     }
     .navigation li{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         background-color: white;
+        -webkit-transition-property: all;
+        -o-transition-property: all;
         transition-property: all;
-        transition-duration: 0.5s;
+        -webkit-transition-duration: 0.5s;
+             -o-transition-duration: 0.5s;
+                transition-duration: 0.5s;
         border-radius: 25px;
-        /* box-shadow: 10px 10px 10px rgb(170, 170, 170); */
         border-width: 0.1px;
-        border-style: double;
+        border-style: solid;
         border-color: rgb(211, 211, 211);
     }
     .navigation a {
@@ -79,8 +132,12 @@ html body {
         letter-spacing: 2px;
         font-size: 16px;
         padding: 15px 20px;
+        -webkit-transition-property: all;
+        -o-transition-property: all;
         transition-property: all;
-        transition-duration: 0.4s;
+        -webkit-transition-duration: 0.4s;
+             -o-transition-duration: 0.4s;
+                transition-duration: 0.4s;
         border-radius: 25px;
     }
     .navigation li:hover,
@@ -88,7 +145,8 @@ html body {
         background-color: rgb(0, 0, 0);
         color: white;
         border-color: #191A19;
-        box-shadow: 0px 0px 10px white;
+        -webkit-box-shadow: 0px 0px 10px white;
+                box-shadow: 0px 0px 10px white;
     }
     .navigation a:active{
         font-size: 14px;
@@ -99,11 +157,17 @@ html body {
 
 /* start en-ka div */
     .language {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         background-color: #191A19;
-        flex-wrap: wrap;
-        width: 150px;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        max-width: 150px;
+        width: 100%;
         height: 50px;
         padding: 5px;
         border-radius: 25px;
@@ -116,9 +180,15 @@ html body {
     .active-language {
         width: 100%;
         height: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         background-color: white;
         border-radius: 25px;
     }
@@ -127,13 +197,20 @@ html body {
         font-family: 'BPG ExtraSquare Mtavruli';
         font-weight: 600;
         letter-spacing: 1px;
+        padding: 5px;
     }
     .option-language {
         width: 100%;
         height: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         border-radius: 25px;
     }
     .option-language p {
@@ -141,9 +218,79 @@ html body {
         font-family: 'BPG ExtraSquare Mtavruli';
         font-weight: 400;
         letter-spacing: 1px;
+        padding: 5px;
     }
-/* end en-ka div */
 
+    /* controlling headers right section */
+    /* this section conteines language changer and AI SUPPORT BUTTON */
+    .header-language-ai{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        row-gap: 10px;
+        max-width: 150px;
+        width: 100%;
+    }
+
+
+
+    /* rught-AI div */
+    /* this part is for responsive to make AI SUPPORT button tu come under language toggle */
+    
+    .right-AI li{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        background-color: #ff9100;
+        -webkit-transition-property: all;
+        -o-transition-property: all;
+        transition-property: all;
+        -webkit-transition-duration: 0.5s;
+             -o-transition-duration: 0.5s;
+                transition-duration: 0.5s;
+        border-radius: 25px;
+        border-width: 0.1px;
+        border-style: solid;
+        border-color: rgb(211, 211, 211);
+        width: 100%;
+    }
+    .right-AI a{
+        width: 100%;
+        color: #191A19;
+        font-family: 'BPG ExtraSquare Mtavruli';
+        letter-spacing: 2px;
+        font-size: 16px;
+        padding: 15px 20px;
+        -webkit-transition-property: all;
+        -o-transition-property: all;
+        transition-property: all;
+        -webkit-transition-duration: 0.4s;
+             -o-transition-duration: 0.4s;
+                transition-duration: 0.4s;
+        border-radius: 25px;
+        text-align: center;
+    }
+    .right-AI li:hover,
+    .right-AI a:hover{
+        background-color: rgb(0, 0, 0);
+        color: white;
+        border-color: #191A19;
+        -webkit-box-shadow: 0px 0px 10px white;
+                box-shadow: 0px 0px 10px white;
+    }
+    .right-AI a:active{
+        font-size: 14px;
+    }
 
 
 /* section one  */
@@ -153,21 +300,34 @@ html body {
 
 
     .sec-one-photo{
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#191A19), to(transparent)), url(../images/pexels-pixabay-276583.jpg);
+        background-image: -o-linear-gradient(top, #191A19, transparent), url(../images/pexels-pixabay-276583.jpg);
         background-image: linear-gradient(to bottom, #191A19, transparent), url(../images/pexels-pixabay-276583.jpg);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
         width: 100%;
         height: 1000px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
     .sec-one-wraper{
         max-width: 1440px;
         width: 90%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         row-gap: 5vw;
     }
 
@@ -176,8 +336,13 @@ html body {
     /* section one title */
     /* ------------------ */
     .sec-one-title{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         row-gap: 20px;
     }
     .sec-one-title h2{
@@ -203,6 +368,8 @@ html body {
     /* ------------------ */
     
     .sec-one-buttons{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
     .button1{
@@ -217,8 +384,12 @@ html body {
         font-family: 'BPG ExtraSquare Mtavruli';
         font-weight: 600;
         color: white;
+        -webkit-transition: all;
+        -o-transition: all;
         transition: all;
-        transition-duration: 0.4s;
+        -webkit-transition-duration: 0.4s;
+             -o-transition-duration: 0.4s;
+                transition-duration: 0.4s;
         margin-right: 2vw;
     }
     .button1:hover{
@@ -245,8 +416,12 @@ html body {
         font-family: 'BPG ExtraSquare Mtavruli';
         font-weight: 600;
         color: #191A19;
+        -webkit-transition-property: all;
+        -o-transition-property: all;
         transition-property: all;
-        transition-duration: 0.4s;
+        -webkit-transition-duration: 0.4s;
+             -o-transition-duration: 0.4s;
+                transition-duration: 0.4s;
     }
     .button2:hover{
         background-color: #191A19;
@@ -262,17 +437,25 @@ html body {
 /* it will have whole information about the company and website */
 
     .sec-two{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         background-color: #191A19;
         width: 100%;
         padding: 100px 0;
     }
     .sec-two-wraper{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         max-width: 1440px;
         width: 90%;
-        column-gap: 30px;
+        -webkit-column-gap: 30px;
+           -moz-column-gap: 30px;
+                column-gap: 30px;
     }
     .sec-two-wraper h2{
         font-family: 'BPG ExtraSquare Mtavruli';
@@ -280,7 +463,8 @@ html body {
         font-weight: 800;
         color: #FFF;
         text-decoration: underline;
-        text-decoration-color: rgb(255, 145, 0);
+        -webkit-text-decoration-color: rgb(255, 145, 0);
+                text-decoration-color: rgb(255, 145, 0);
         text-underline-offset: 40px;
     }
     .sec-two-wraper p{
@@ -292,14 +476,17 @@ html body {
         line-height: 35px;
         width: 80%;
     }
+    .sec-two-title{
+        width: 50%;
+    }
     .sec-two-photo{
         background-image: url(../images/1_HWTn9_OU8yJbA__QrNfKYQ.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         
-        width: 2000px;
-        height: 30vw;
+        width: 45%;
+        height: 100%;
         border-radius: 20px;
     }
 
@@ -309,23 +496,38 @@ html body {
 /* it will provide contact info email and map location */
 
     .sec-three{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         padding: 100px 0;
     }
     .sec-three-wraper{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         max-width: 1440px;
         width: 90%;
-        justify-content: space-between;
-        align-items: center;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
 
     /* contact info */
 
     .contact-info{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     .contact-info h2{
         font-family: 'BPG ExtraSquare Mtavruli';
@@ -333,16 +535,24 @@ html body {
         font-weight: 800;
         color: #191A19;
         text-decoration: underline;
-        text-decoration-color: rgb(255, 145, 0);
+        -webkit-text-decoration-color: rgb(255, 145, 0);
+                text-decoration-color: rgb(255, 145, 0);
         text-underline-offset: 40px;
         margin-bottom: 70px;
     }
 
     /* info class */
     .info{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         row-gap: 20px;
     }
     .info i{
@@ -364,9 +574,15 @@ html body {
     .phone,
     .email,
     .location{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
-        column-gap: 20px;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-column-gap: 20px;
+           -moz-column-gap: 20px;
+                column-gap: 20px;
     }
 
     /* map class */
@@ -385,8 +601,12 @@ html body {
 /* it will provide link to different page where you can shop */
 
     .sec-four{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         padding: 100px 0;
         outline: 3px solid #191A19;
         outline-offset: 0px;
@@ -394,7 +614,6 @@ html body {
     .sec-four-wraper{
         max-width: 1440px;
         width: 90%;
-
     }
 
     /* section four title */
@@ -404,26 +623,40 @@ html body {
         font-weight: 800;
         color: #191A19;
         text-decoration: underline;
-        text-decoration-color: rgb(255, 145, 0);
+        -webkit-text-decoration-color: rgb(255, 145, 0);
+                text-decoration-color: rgb(255, 145, 0);
         text-underline-offset: 40px;
         margin-bottom: 110px;
     }
 
     /* shopping class */
     .shopping{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         row-gap: 40px;
         width: 80%;
     }
     .shopping-wraper{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
     .shopping a{
         width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
     /* .shopping a:active{
         padding: 10px;
@@ -431,18 +664,31 @@ html body {
 
     /* control rows */
     .first-row{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        column-gap: 40px;
+        -webkit-column-gap: 40px;
+           -moz-column-gap: 40px;
+                column-gap: 40px;
     }
     .second-row{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        column-gap: 40px;
+        -webkit-column-gap: 40px;
+           -moz-column-gap: 40px;
+                column-gap: 40px;
     }
 
     /* controlling shop class */
     .shop{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         background-color: rgb(209, 209, 209);
         border-style: solid;
         border-width: 5px;
@@ -451,7 +697,11 @@ html body {
         padding: 20px;
         border-radius: 20px;
         display: flex;
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-transition: all 0.1s;
+        -o-transition: all 0.1s;
         transition: all 0.1s;
         height: 45vw;
     }
@@ -460,7 +710,6 @@ html body {
         font-size: 40px;
         font-weight: 600;
         color: #191A19;
-        padding: 20px;
         margin-top: 20px;
         text-align: center;
     }
@@ -516,31 +765,52 @@ html body {
 /* it will have social media navigation */  
 
     .footer{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         background-color: #191A19;
         padding: 64px 0;
     }
     .footer-wraper{
         max-width: 1440px;
         width: 90%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
 
     /* left-side controll */
     .left-side{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         row-gap: 20px;
     }
 
     /* social media contro */
     .social-media{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        column-gap: 15px;
+        -webkit-column-gap: 15px;
+           -moz-column-gap: 15px;
+                column-gap: 15px;
     }
     .social-media i{
         font-size: 30px;
@@ -549,8 +819,13 @@ html body {
 
     /* footer naviation controll */
     .navigation-wraper{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         row-gap: 20px;
     }
     .navigation-wraper h2{
@@ -568,14 +843,21 @@ html body {
         text-align: center;
     }
     .footer-navigation ul{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         row-gap: 10px;
         text-align: center;
     }
 
     /* copyright control */
     .copyright{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
 
     }
@@ -591,8 +873,9 @@ html body {
     }
 
 
-
-
+/* login page */
+/* this page is for loging in to the site */
+/* it is going through back end but it is not working gfrom now */
     .modal {
         display: none;
         position: fixed;
@@ -610,20 +893,34 @@ html body {
         margin: 15% auto;
         padding: 20px;
         border: 1px solid #888;
-        width: 500px;
+        max-width: 1440px;
+        width: 90%;
         height: 500px;
         position: relative;
         z-index: 3;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         padding: 20px;
     }
     .modal-content form{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         width: 100%;
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         padding: 20px;
     }
     .modal-content input{
@@ -665,12 +962,19 @@ html body {
     }
     
     .blur {
-        filter: blur(5px);
+        -webkit-filter: blur(5px);
+                filter: blur(5px);
     }
 
 
 
-
+/* regitster page */
+/* this parto of the code is for registering to the website */
+/* this information gose through back end and it shoudl write to text file */
+/* but in this case if you want to try it you shoudl download the file */
+/* then using terminal go to  "UserFormApp" folder  with "cd User FormApp" commandd */
+/* then you can run the back end with "dotnet run" command in terminal */
+/* then register page will work good and every time you register it will be added to the text file with json format */
     .register-modal {
         display: none;
         position: fixed;
@@ -688,20 +992,34 @@ html body {
         margin: 15% auto;
         padding: 20px;
         border: 1px solid #888;
-        width: 500px;
+        max-width: 1440px;
+        width: 90%;
         height: 600px;
         position: relative;
         z-index: 3;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         padding: 20px;
     }
     .register-modal-content form{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         width: 100%;
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         padding: 20px;
     }
     .register-modal-content input{
@@ -742,3 +1060,319 @@ html body {
         text-decoration: none;
         cursor: pointer;
     }
+    
+
+
+
+/* media sectiona */
+/* this section of the css code is for adjusting for differante devices */
+/* i am gona use max-width */
+/* for now i am gonna start from 10240px for tablet devices*/
+/* in this case there is minimal adjustments */
+/* for now we just need photo adjustement in section two */
+
+@media (max-width: 1024px){
+    .sec-two-photo{
+        height: 100%;
+        width: 45%;
+        background-position: -3cm;
+    }
+    .sec-two-title{
+        width: 50%;
+    }
+    .info{
+        row-gap: 50px;
+    }
+
+    /* to look better i am changing headers navigation buttons padding */
+    /* with this we can go down to 930px width */
+    .navigation a{
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+}
+
+/* next media */
+/* next media will be 870px */
+/* because the titles of the sections are getting wierd i will lower there fotn size */
+@media (max-width: 870px){
+    /* changing section two title */
+    .sec-two-title h2{
+        font-size: 50px;
+    }
+    .sec-two-title p{
+        font-size: 16px;
+        line-height: 25px;
+    }
+    /* changing section four title */
+    .sec-four-title h2{
+        font-size: 50px;
+    }
+    /* changing section three title */
+    /* also i will drop down the number mail and address */
+    .sec-three-wraper h2{
+        font-size: 50px;
+        text-underline-offset: 50px;
+    }
+    .phone,
+    .email,
+    .location{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: start;
+        row-gap: 15px;
+    }
+}
+
+
+
+/* next media */
+/* this section is for media under 830px  */
+/* because of shopping part of the website is getting wierd */
+/* this is because of names thats why under 830px it will be all vertical */
+@media (max-width: 830px){
+    /* go to column section two */
+    .sec-two-wraper{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        row-gap: 70px;
+    }
+    .sec-two-title{
+        width: 100%;
+    }
+    .sec-two-title h2{
+        width: 100%;
+        text-align: center;
+    }
+    .sec-two-title p{
+        width: 100%;
+        text-align: center;
+    }
+    .sec-two-photo{
+        width: 100%;
+        height: 600px;
+    }
+
+    /* section-four changes */
+    .sec-four-title{
+        text-align: center;
+    }
+    .first-row{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        row-gap: 40px;
+    }
+    .second-row{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        row-gap: 40px;
+    }
+    .shop{
+        height: 700px;
+    }
+    .photo1,
+    .photo2,
+    .photo3,
+    .photo4{
+        height: 100%;
+    }
+
+    /* section three changes */
+    .sec-three-wraper{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-column-gap: 50px;
+           -moz-column-gap: 50px;
+                column-gap: 50px;
+        row-gap: 50px;
+    }
+    .contact-info h2{
+        margin-bottom: 110px;
+        width: 100%;
+        text-align: center;
+    }
+    .icon{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+    .info a{
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+    .map{
+        width: 100%;
+        height: 90vw;
+    }
+    .icon-logo{
+        font-size: 80px;
+    }
+}
+
+/* next media */
+/* this media is for under 720px */
+/* in this section i am adding burgerbar to the header */
+/* by that i will prevent overflow of the header */
+@media (max-width: 720px){
+    .navigation {
+        display: none;
+    }
+
+    .burgerbar {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        cursor: pointer;
+    }
+
+    .header-right .navigation.active {
+        display: block;
+        position: absolute;
+        background: #fff;
+        top: 70%;
+        right: 24%;
+        width: 50%;
+        -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        padding: 20px 30px 20px 20px;
+        border-radius: 25px;
+    }
+
+    .header-right .navigation ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .header-right .navigation ul li {
+        margin: 0;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .header-right .navigation ul li a {
+        display: block;
+        padding: 10px;
+        color: #333;
+        text-decoration: none;
+    }
+
+    .header-right .navigation ul li a:hover {
+        background: #f4f4f4;
+    }
+
+    .header-right{
+        -webkit-column-gap: 10px;
+           -moz-column-gap: 10px;
+                column-gap: 10px;
+    }
+    /* also changing footer */
+    .footer-wraper{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        row-gap: 80px;
+    }
+}
+
+
+/* next media */
+/* next media is 600px */
+/* looks like section four components are realy ugly for now so i will change it */
+@media (max-width: 600px){
+    .shop{
+        height: 100vw;
+    }
+    .sec-two-photo{
+        background-position: center;
+    }
+}
+
+
+/* last part of media */
+/* in this i will change section one title which is too big */
+@media (max-width: 500px){
+    .sec-one-title h2{
+        text-align: center;
+        font-size: 50px;
+    }
+    .sec-one-title h3{
+        text-align: center;
+        font-size: 50px;
+    }
+    .sec-one-buttons{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        row-gap: 20px;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+
+    }
+    .button1,
+    .button2{
+        width: 80%;
+    }
+    .button1{
+        margin-right: 0;
+    }
+
+    .sec-two-photo{
+        height: 90vw;
+    }
+
+    .shop h3{
+        font-size: 25px;
+    }
+    .shop p{
+        font-size: 16px;
+    }
+    .contact-info h2{
+        font-size: 30px;
+    }
+}
