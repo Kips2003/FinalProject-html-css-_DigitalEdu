@@ -89,23 +89,6 @@ const header = document.querySelector('header');
                 }
             };
         });
-        async function submitLoginForm(event) {
-            event.preventDefault();
-            
-            const form = event.target;
-            const formData = new FormData(form);
-            
-            const response = await fetch('http://localhost:5029/login', {
-                method: 'POST',
-                body: formData
-            });
-            
-            if (response.ok) {
-                window.location.href = 'loged-in.html';
-            } else {
-                alert('Login failed');
-            }
-        }
 
 
         // burgerbar function
