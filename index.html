@@ -265,20 +265,22 @@
     <div id="registerModal" class="register-modal">
         <span class="close-register">&times;</span>
         <div class="modal-content">
-            <form action="#" method="post">
-                <label for="name">Full Name:</label>
-                <input type="text" id="name" name="name" placeholder="Full Name"><br>
+            <form id="registrationForm" method="post" action="http://176.221.151.167:8080/api/v1/Registration">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" placeholder="Full Name"><br>
                 <label for="phone">Phone number:</label>
                 <input type="text" name="phone" id="phone" placeholder="Phone number"><br>
                 <label for="email-register">Email:</label>
-                <input type="email" id="email-register" name="email-register" placeholder="Email"><br>
+                <input required type="email" id="emailRegister" name="emailRegister" placeholder="Email"><br>
                 <label for="password-register">Password:</label>
-                <input type="password" id="password-register" name="password-register" placeholder="Password"><br>
-                <button type="submit">Sign Up</button>
+                <input type="password" id="passwordRegister" name="passwordRegister" placeholder="Password"><br>
+                <button type="submit" style="cursor: pointer;">Sign Up</button>
             </form>
         </div>
     </div>
 
+
+    
     <script src="script.js"></script>
 </body>
 </html>
