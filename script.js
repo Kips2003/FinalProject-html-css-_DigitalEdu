@@ -64,6 +64,11 @@ const header = document.querySelector('header');
             };
         });
 
+        //email confirm window
+        document.addEventListener('DOMContentLoaded', () => {
+
+        })
+
 
         // register page
         document.addEventListener('DOMContentLoaded', () => {
@@ -89,6 +94,23 @@ const header = document.querySelector('header');
                 }
             };
         });
+        async function submitLoginForm(event) {
+            event.preventDefault();
+            
+            const form = event.target;
+            const formData = new FormData(form);
+            
+            const response = await fetch('http://0.0.0.0:8080/login', {
+                method: 'POST',
+                body: formData
+            });
+            
+            if (response.ok) {
+                window.location.href = 'loged-in.html';
+            } else {
+                alert('Login failed');
+            }
+        }
 
 
         // burgerbar function
@@ -108,3 +130,85 @@ const header = document.querySelector('header');
                 });
             });
         });
+
+
+        // document.getElementById('registerForm').addEventListener('submit', function(event) {
+        //     event.preventDefault(); // Prevent the form from submitting the traditional way
+
+        //     const formData = new FormData(this);
+
+        //     fetch('http://176.221.151.167:8080/register', {
+        //         method: 'POST',
+        //         body: formData,
+        //     })
+        //     .then(response => response.json())
+        //     .then(data => {
+        //         console.log(data);
+        //         // You can display a success message or handle the response as needed
+        //     })
+        //     .catch(error => {
+        //         console.error('Error:', error);
+        //         // You can display an error message or handle the error as needed
+        //     });
+        // });
+
+
+
+
+
+        // document.getElementById('registrationForm').addEventListener('submit', async function(event) {
+        //     event.preventDefault();
+
+        //     const name = document.getElementById('fullName').value;
+        //     const phone = document.getElementById('phone').value;
+        //     const email = document.getElementById('emailRegister').value;
+        //     const password = document.getElementById('passwordRegister').value;
+
+        //     const response = await fetch('http://0.0.0.0:8080/api/v1/', {
+        //         method: 'HTTPPOST',
+        //         headers: {
+        //             'Content-Type': 'application/json'
+        //         },
+        //         body: JSON.stringify({ fullName, phoneNumber, email, password })
+        //     });
+
+        //     const result = await response.json();
+        //     if (response.ok) {
+        //         alert('Registration successful: ' + result.message);
+        //     } else {
+        //         alert('Registration failed: ' + result.message);
+        //     }
+        // });
+
+
+
+        document.getElementById('registrationForm').addEventListener('submit', async function (event) {
+            event.preventDefault();
+            const modal = document.getElementById('registerModal');
+            const mainPage = document.getElementById('mainPage');
+
+            const confirm = document.getElementById("confirmation");
+
+            const form = event.target;
+            const formData = new FormData(form);
+        
+            try {
+                const response = await fetch(form.action, {
+                    method: 'POST',
+                    body: formData
+                });
+        
+                if (response.ok) {
+                    const data = await response.json();
+                    modal.style.display = "none";
+                    confirm.style.display = "block";
+                    
+                } else {
+                    const errorData = await response.json();
+                    alert("Registration failed: " + errorData.message);
+                }
+            } catch (error) {
+                alert("An unexpected error occurred. Please try again.");
+            }
+        });
+        
