@@ -1402,3 +1402,41 @@ html body {
     font-weight: 500;
     font-family: 'Be Vietnam Pro';
 }
+
+.wait-confirmation{
+    display: none;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+.confirm{
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    max-width: 1440px;
+    width: 90%;
+    height: 600px;
+    position: relative;
+    z-index: 3;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 20px;
+}
+.confirm h1{
+    font-size: 50px;
+    font-family: "Be Vietnam Pro";
+    font-weight: 700;
+}

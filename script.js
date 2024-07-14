@@ -185,7 +185,6 @@ const header = document.querySelector('header');
         document.getElementById('registrationForm').addEventListener('submit', async function (event) {
             event.preventDefault();
             const modal = document.getElementById('registerModal');
-            const mainPage = document.getElementById('mainPage');
 
             const confirm = document.getElementById("confirmation");
 
