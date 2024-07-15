@@ -192,7 +192,7 @@ const header = document.querySelector('header');
             const formData = new FormData(form);
         
             try {
-                const response = await fetch(form.action, {
+                const response = await fetch('http://176.221.151.167:8080/api/v1/Registration', {
                     method: 'POST',
                     body: formData
                 });
